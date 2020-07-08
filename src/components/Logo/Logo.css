@@ -1,0 +1,17 @@
+.Logo{
+    background-color: transparent;
+    padding: 2px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.Logo img{
+    height: 90%;
+}
+
+
+.Logo:hover{
+    cursor:pointer;
+}

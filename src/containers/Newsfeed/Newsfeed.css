@@ -1,0 +1,9 @@
+.NewsFeed {
+    top: 25%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}

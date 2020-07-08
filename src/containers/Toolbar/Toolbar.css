@@ -1,0 +1,49 @@
+.Header{
+    width: 99%;
+    height: 5vw;
+    margin: 4px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    position: sticky;
+}
+
+.Header nav{
+    display: flex;
+    flex-flow: row;
+}
+
+
+.Header__Logo{
+    width: auto;
+    left: 10px;
+    padding: 10px;
+}
+
+.Header__ContactTab{
+    width: 10%;
+    right: 10px;
+    padding: 10px;
+
+}
+.Header__ContactTab:hover{
+    cursor: pointer;
+    color: orange;
+}
+
+.Header__Item{
+    width: 20%;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+
+.CategoriesMenu{
+    width: 50%;
+}
