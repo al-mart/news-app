@@ -42,6 +42,7 @@ const Layout = (props) => {
             <Toolbar modalShowToggle={() => modalShowToggleHandler(true)}
                      clicked={(categoryName) => changeState(categoryName)}
                      searchClicked={(event) => searchClicked(event)}
+                     logoClickHandler={()=> {changeState("")}}
             />
             <Modal
                 modalClosed={() => modalShowToggleHandler(false)}
@@ -53,7 +54,7 @@ const Layout = (props) => {
             </Modal>
             <main>
                 <Switch>
-                    <Route key="/general" path="/general" exact component={NewsFeed}/>
+                    <Route key="/" path="/" exact component={NewsFeed}/>
                     <Route key="/business" path="/business" component={NewsFeed}/>
                     <Route key="/entertainment" path="/entertainment" component={NewsFeed}/>
                     <Route key="/health" path="/health" component={NewsFeed}/>

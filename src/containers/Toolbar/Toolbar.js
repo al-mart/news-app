@@ -15,7 +15,8 @@ const ToolBar = (props) => {
     ]
 
     const logoClickHandler = () => {
-        props.history.push({pathname: "/general"})
+        props.logoClickHandler();
+        props.history.push({pathname: "/"});
     }
 
     return (

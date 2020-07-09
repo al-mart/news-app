@@ -32,11 +32,10 @@ class NewsFeed extends Component{
 
     getSearchParams = () => {
         return queryStringLib.parse(this.props.location.search)["?query"];
-
     }
 
     loadData = (categoryName, query) => {
-        if(query) {
+        if(query || categoryName === "") {
             axios.get(`everything?language=en&q=` + query)
                 .then(res => {
                     this.setState({articles: res.data.articles});
