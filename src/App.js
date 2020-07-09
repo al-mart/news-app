@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter} from "react-router-dom";
+import { HashRouter} from "react-router-dom";
 import Layout from "./containers/Layout/Layout";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className="App">
                 <Layout>
                 </Layout>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
